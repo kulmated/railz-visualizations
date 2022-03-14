@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property      | Attribute      | Description                                            | Type     | Default               |
@@ -10,15 +11,15 @@
 | `loadingText` | `loading-text` | Text to display at the bottom of the loading indicator | `string` | `undefined`           |
 | `textColor`   | `text-color`   | Color of the loading text                              | `string` | `'#000000'`           |
 
+
 ## Dependencies
 
 ### Used by
 
-- [railz-statements-chart](../../components/statements-chart)
-- [railz-transactions-control](../../components/transactions-control)
+ - [railz-statements-chart](../../components/statements-chart)
+ - [railz-transactions-control](../../components/transactions-control)
 
 ### Graph
-
 ```mermaid
 graph TD;
   railz-statements-chart --> railz-loading
@@ -26,6 +27,6 @@ graph TD;
   style railz-loading fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
----
+----------------------------------------------
 
-_Built with [StencilJS](https://stenciljs.com/)_
+*Built with [StencilJS](https://stenciljs.com/)*
