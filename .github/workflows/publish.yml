@@ -6,7 +6,7 @@ name: Publish npm
 on:
   pull_request:
     types: [closed]
-    branches: [master]
+    branches: [master, development]
 
 jobs:
   publish:
@@ -35,8 +35,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          git config user.name "${{ github.user }}"
-          git config user.email "${{ github.user}}@users.noreply.github.com"
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
 
           if [ ${{ github.base_ref }} = development ]; then
             yarn ci:publish:prepatch

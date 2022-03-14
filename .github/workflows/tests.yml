@@ -5,7 +5,7 @@ name: Tests
 
 on:
   push:
-    branches: [master]
+    branches: [master, feature/**, bugfix/**, hotfix/**]
   pull_request:
     types: [opened, synchronize]
 
